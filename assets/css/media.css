@@ -1,0 +1,36 @@
+
+@media screen and (min-width: 0px) and (max-width: 769px) {
+  .copy p{
+    font-size: 14px;
+  }
+  form{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .form{
+    bottom: 10%;
+  }
+}
+
+@media screen and (min-width:770) and (max-width: 1024){
+  
+form{   
+  display: flex!important;
+  flex-direction: column!important;
+  width: 100%;
+  }
+ 
+}
+
+@media screen and (min-width:1024) and (max-width: 1366){
+   form{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+

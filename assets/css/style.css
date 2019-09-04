@@ -44,7 +44,7 @@ video {
   grid-template-columns: 1fr 1fr 1fr;
 }
 .copy p{
-  margin-bottom: 0 !important;
+  margin: 0 !important;
   text-align: center;
   font-family: 'Poppins', sans-serif;
 }
@@ -79,6 +79,7 @@ input{
 a{
   color: #fff;
   font-weight: bold;
+  text-decoration: none!important;
 }
 a:hover{
   color: #fff;
@@ -93,10 +94,13 @@ a:hover{
   font-family: 'Poppins', sans-serif;
   display: -webkit-inline-box;
   border-color: transparent!important;
+  padding: 5px 15px 5px 15px;
+  transition: .5s;
 }
 
 .btn-primary:hover{
   background-color: #3c706f;
+   transition: .5s;
 }
 
 input[type="number"]::-webkit-inner-spin-button,

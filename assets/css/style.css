@@ -25,7 +25,6 @@ video {
     align-items: center;
     color: white;
     width: 100%;
-    background-color: #112620;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,6 +46,7 @@ video {
   margin: 0 !important;
   text-align: center;
   font-family: 'Poppins', sans-serif;
+  font-weight: 600;
 }
 .copy p a {
   margin-right: 10px;
@@ -54,6 +54,7 @@ video {
 
 .fa{
   color: #fff;
+  font-weight: 600;
 }
 
 .form{
@@ -107,3 +108,5 @@ input[type="number"]::-webkit-inner-spin-button,
    input[type="number"]::-webkit-outer-spin-button {
        display: none;
    }
+
+   

@@ -39,7 +39,7 @@ video {
 
 h5{
    font-family: 'Poppins', sans-serif;
-   font-weight: 800;
+   font-weight: 500;
    color: #fff;
 }
 
@@ -80,11 +80,12 @@ h5{
 
 .icons{
   position: absolute;
-  right: 30px;
   bottom: 0;
   display: flex;
   flex-direction: row-reverse;
-  width: 5px;
+  width: 100%;
+  justify-content: center;
+
 }
 
 .form{
@@ -135,7 +136,7 @@ button:focus{
 
 a{
   color: #fff;
-  font-weight: bold;
+  font-weight: 600;
   text-decoration: none!important;
 }
 a:hover{
@@ -218,5 +219,5 @@ input[type="number"]::-webkit-inner-spin-button,
 }
 
 ::-webkit-input-placeholder{
-  color: #fff!important;
+  color: #cccc!important;
 }

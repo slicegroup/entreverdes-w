@@ -20,7 +20,7 @@ video {
 .copy{
     display: flex;
     position: absolute;
-    bottom: 0;
+    bottom: 80px;
     justify-content: center;
     align-items: center;
     color: white;
@@ -36,9 +36,24 @@ video {
 *:focus{
   outline: none;
 }
+
+h5{
+   font-family: 'Poppins', sans-serif;
+   font-weight: 800;
+   color: #fff;
+}
+
+.close{
+  color: #fff;
+}
+
+.close:hover{
+  color: #fff;
+}
 .copy{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+     justify-content: space-between;
+    display: flex;
+    margin-left: -5%;
 }
 .copy p{
   margin: 0 !important;
@@ -53,26 +68,69 @@ video {
 .fa{
   color: #fff;
   font-weight: 600;
+  font-size: 20px;
+  transition: ease-in-out all .3s;
+  margin: 5px;
+}
+
+.fa:hover{
+  color: #3c706f;
+  transition: ease-in-out all .3s;
+}
+
+.icons{
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 5px;
 }
 
 .form{
   width: 100%;
-  position: absolute;
-  bottom: 20%;
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 form{
-  background: rgba(17, 38, 32, 0.22);
-  padding: 25px;
-  border-radius: 5px;
+     display: flex;
+    flex-direction: column;
+    /* margin: 11px; */
+    justify-content: center;
+    align-items: center;
+
 }
+:focus{outline: none;}
+
+
+.effect-1{
+  border: 0;
+  padding: 7px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.52);
+  margin: 5%;
+  background: transparent;
+  color: #fff;
+  width: 100%;}
 
 input{
   font-family: 'Poppins', sans-serif;
   padding: 5px;
+}
+
+.weight{
+  transform: rotate(-100grad);
+  position: absolute;
+  bottom: 100px;
+  color: #fff;
+  font-weight: 800;
+  left: -30px;
+}
+
+button:focus{
+  outline: none!important;
 }
 
 a{
@@ -106,3 +164,59 @@ input[type="number"]::-webkit-inner-spin-button,
    input[type="number"]::-webkit-outer-spin-button {
        display: none;
    }
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem transparent;
+}
+
+.btn-primary:focus, .btn-primary.focus{
+  box-shadow: 0 0 0 0.2rem transparent;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #3c706f!important;
+}
+.boton-center{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    bottom: 30%;
+    width: 100%;
+}
+
+.modal-header{
+  border-bottom: 1px solid transparent;
+}
+
+.modal-content{
+  background-image: linear-gradient(to left top, #112620, #1b3731, #264944, #315c59, #3c706f);
+  border: none!important;
+  background-color: transparent;
+}
+
+.modal-open .modal {
+  background: #3c706f;
+}
+
+.modal-title{
+      display: flex;
+    justify-content: center;
+    margin-top: -10%;
+}
+.modal-footer {
+  border-top: 1px solid transparent;
+  justify-content: center;
+}
+
+.title-modal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+::-webkit-input-placeholder{
+  color: #fff!important;
+}

@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/media.css">
 </head>
@@ -17,26 +18,50 @@
     <video id="mivideo" autoplay loop muted>
       <source src="assets/video/landing.mp4" type="video/mp4"></source>
     </video>
-    <div class="form">
-      <form method="post">
-        <input type="text" name="nombre" placeholder="Nombre" required="required" />
-        <input type="number" name="telefono" placeholder="Teléfono" required="required" />
-        <input type="email" name="correo" placeholder="Correo" required="required" />
-        <button type="submit" class="btn btn-primary btn-block btn-large">
-          <a href="mailto:ariannysgarcia18@gmail.com.com?subject=subject&body=body">
-            Enviar</a>
-        </button>
-
-      </form>
+    <div class="boton-center">
+      <button type="button" class="btn btn-primary btn-block btn-large" data-toggle="modal" data-target="#exampleModalCenter">
+        Más
+      </button>
     </div>
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="title-modal">
+              <h5 class="modal-title" id="exampleModalLongTitle">Contáctanos</h5>
+            </div>
+            <div class="form">
+              <form method="post">
+                <input class="effect-1" type="text" name="nombre" placeholder="Nombre" required="required" />
+                <input class="effect-1" type="number" name="telefono" placeholder="Teléfono" required="required" />
+                <input class="effect-1" type="email" name="correo" placeholder="Correo" required="required" />
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary btn-block btn-large ">
+                <a href="mailto:ariannysgarcia18@gmail.com.com?subject=subject&body=body">
+                  Enviar</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 
 
-  <footer class="copy">
-    <a class="weight" href="mailto: arrendamientos@todoinmuebles.com.co
-    ?subject=Questions">
-      <p>Info@entreverde.com.co</p>
-    </a>
+
+  <div class="weight">
+    <p>Info@entreverde.com.co</p>
+  </div>
+
+  <div class="icons">
     <p>
 
       <a href="https://www.facebook.com/entreverdeantioquia/?ref=br_rs" target="_blank">
@@ -45,9 +70,14 @@
       <a href="https://www.instagram.com/entreverde_/" target="_blank">
         <i class="fa fa-instagram" aria-hidden="true"></i>
       </a>
+      <a href="https://api.whatsapp.com/send?phone=573008684986" target="_blank">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+      </a>
     </p>
-    <p>300 868 49 86 - 475 23 81</p>
-  </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.js "></script>
   <script type="text/javascript" src="assets/js/main.js "></script>
 </body>
 

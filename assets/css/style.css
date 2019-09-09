@@ -33,13 +33,22 @@ video {
     padding: 10px;
 }
 
+@font-face {
+    font-family: 'Futura Lt BT';
+    src: url('FuturaBT-Light.woff2') format('woff2'),
+        url('FuturaBT-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
 *:focus{
   outline: none;
 }
 
 h5{
-   font-family: 'Poppins', sans-serif;
-   font-weight: 500;
+  font-family: 'Futura Lt BT';
+    font-weight: 300;
+    font-style: normal;
    color: #fff;
 }
 
@@ -50,6 +59,12 @@ h5{
 .close:hover{
   color: #fff;
 }
+
+p{
+  font-family: 'Futura Lt BT';
+  font-weight: 300;
+  font-size: 20px;
+}
 .copy{
      justify-content: space-between;
     display: flex;
@@ -58,8 +73,9 @@ h5{
 .copy p{
   margin: 0 !important;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
+  font-family: 'Futura Lt BT';
+    font-weight: 300;
+    font-style: normal;
 }
 .copy p a {
   margin-right: 10px;
@@ -79,31 +95,30 @@ h5{
 }
 
 .icons{
-    position: absolute;
-    bottom: 100px;
-    color: #fff;
-    font-weight: 800;
-    right: 30px;
-    flex-direction: ;
-    display: flex;
-    width: 5px;
-    top: 45%;
+  position: absolute;
+  bottom: 100px;
+  color: #fff;
+  font-weight: 800;
+  right: 30px;
+  flex-direction: ;
+  display: flex;
+  width: 5px;
+  top: 45%;
 }
 
 .form{
   width: 100%;
-
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 form{
-     display: flex;
-    flex-direction: column;
-    /* margin: 11px; */
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
 
 }
 :focus{outline: none;}
@@ -119,7 +134,9 @@ form{
   width: 100%;}
 
 input{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Futura Lt BT';
+  font-weight: 300;
+  font-style: normal;
   padding: 5px;
 }
 
@@ -138,7 +155,6 @@ button:focus{
 
 a{
   color: #fff;
-  font-weight: 600;
   text-decoration: none!important;
 }
 a:hover{
@@ -148,14 +164,16 @@ a:hover{
 .btn-primary {
   color: #fff;
   background-color: #112620;
-  font-weight: bold;
   width: auto;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Futura Lt BT';
+  font-weight: 300;
+  font-style: normal;
   display: -webkit-inline-box;
   border-color: transparent!important;
   padding: 5px 15px 5px 15px;
   transition: .5s;
+  font-size: 20px;
 }
 
 .btn-primary:hover{

@@ -34,10 +34,10 @@ video {
 }
 
 @font-face {
-    font-family: 'Futura Lt BT';
-    src: url('FuturaBT-Light.woff2') format('woff2'),
-        url('FuturaBT-Light.woff') format('woff');
-    font-weight: 300;
+    font-family: 'Futura Bk BT';
+    src: url('../fonts/FuturaBT-Book.woff2') format('woff2'),
+        url('../fonts/FuturaBT-Book.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -46,8 +46,8 @@ video {
 }
 
 h5{
-  font-family: 'Futura Lt BT';
-    font-weight: 300;
+  font-family: 'Futura Bk BT';
+    font-weight: normal;
     font-style: normal;
    color: #fff;
 }
@@ -61,8 +61,9 @@ h5{
 }
 
 p{
-  font-family: 'Futura Lt BT';
-  font-weight: 300;
+   font-family: 'Futura Bk BT';
+    font-weight: normal;
+    font-style: normal;
   font-size: 20px;
 }
 .copy{
@@ -73,8 +74,8 @@ p{
 .copy p{
   margin: 0 !important;
   text-align: center;
-  font-family: 'Futura Lt BT';
-    font-weight: 300;
+ font-family: 'Futura Bk BT';
+    font-weight: normal;
     font-style: normal;
 }
 .copy p a {
@@ -127,6 +128,7 @@ form{
 .effect-1{
   border: 0;
   padding: 7px 0;
+  font-size: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.52);
   margin: 5%;
   background: transparent;
@@ -134,9 +136,9 @@ form{
   width: 100%;}
 
 input{
-  font-family: 'Futura Lt BT';
-  font-weight: 300;
-  font-style: normal;
+  font-family: 'Futura Bk BT';
+    font-weight: normal;
+    font-style: normal;
   padding: 5px;
 }
 
@@ -166,14 +168,14 @@ a:hover{
   background-color: #112620;
   width: auto;
   text-align: center;
-  font-family: 'Futura Lt BT';
-  font-weight: 300;
+  font-family: 'Futura Bk BT';
+  font-weight: normal;
   font-style: normal;
   display: -webkit-inline-box;
   border-color: transparent!important;
   padding: 5px 15px 5px 15px;
   transition: .5s;
-  font-size: 20px;
+  font-size: 21px;
 }
 
 .btn-primary:hover{
@@ -225,6 +227,7 @@ input[type="number"]::-webkit-inner-spin-button,
       display: flex;
     justify-content: center;
     margin-top: -10%;
+    font-size: 23px;
 }
 .modal-footer {
   border-top: 1px solid transparent;

@@ -56,6 +56,7 @@ h5{
   color: #fff;
 }
 
+
 .close:hover{
   color: #fff;
 }
@@ -65,6 +66,7 @@ p{
     font-weight: normal;
     font-style: normal;
   font-size: 20px;
+      color: #fff!important;
 }
 .copy{
      justify-content: space-between;
@@ -148,6 +150,36 @@ input{
     font-weight: normal;
     font-style: normal;
   padding: 5px;
+  background: transparent!important;
+    border: none!important;
+    color: #fff!important;
+
+}
+
+.frm_forms{
+  display: flex;
+  justify-content: center;
+} 
+
+.frm_form_fields {
+      width: 95%!important;
+    display: flex!important;
+    justify-content: center!important;
+}
+
+.frm_form_field.frm_inline_container, .frm_form_field.frm_right_container, .frm_form_field.frm_left_container, .frm_combo_inputs_container, .frm_grid_container, .frm_form_fields .frm_section_heading, .frm_form_fields .frm_fields_container, .frm_form_field.frm_two_col .frm_opt_container, .frm_form_field.frm_three_col .frm_opt_container, .frm_form_field.frm_four_col .frm_opt_container {
+    display: block;
+}
+
+.frm_combo_inputs_container, .frm_grid_container, .frm_form_fields .frm_section_heading, .frm_form_fields .frm_fields_container {
+    display: grid;
+    width: 93%!important;
+}
+
+fieldset {
+    margin: 0;
+    border: 0;
+    width: 95%;
 }
 
 .weight{

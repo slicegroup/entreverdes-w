@@ -34,6 +34,7 @@
               </form> -->
             </div>
             <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 1, 'title' => false, 'description' => false ) ); ?>
+        
             <div class="modal-footer">
               <!-- <div class="re-flex">
               <div class="g-recaptcha" data-sitekey="clave-del-sitio">

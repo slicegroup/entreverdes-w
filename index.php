@@ -1,22 +1,11 @@
-<html>
 
-<head>
-  <meta charset="utf-8">
-  <title>Entreverde</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/bootstrap.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/media.css">
-</head>
+<?php get_header(); ?>
 
 <body>
 
   <section class="waiting">
     <video id="mivideo" autoplay loop muted>
-      <source src="assets/video/landing.mp4" type="video/mp4"></source>
+      <source src="<?php echo get_template_directory_uri(); ?>/assets/video/landing.mp4" type="video/mp4"></source>
     </video>
     <div class="boton-center">
       <button type="button" class="btn btn-primary btn-block btn-large" data-toggle="modal" data-target="#exampleModalCenter">
@@ -35,29 +24,41 @@
             <div class="title-modal">
               <h5 class="modal-title" id="exampleModalLongTitle">Contáctanos</h5>
             </div>
-            <div class="form">
-              <form method="post">
+        
+
+            <!-- <div class="form">
+              <form method="post" action="sendmail.php">
                 <input class="effect-1" type="text" name="nombre" placeholder="Nombre" required="required" />
                 <input class="effect-1" type="number" name="telefono" placeholder="Teléfono" required="required" />
                 <input class="effect-1" type="email" name="correo" placeholder="Correo" required="required" />
-              </form>
+              </form> -->
             </div>
+            <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 1, 'title' => false, 'description' => false ) ); ?>
             <div class="modal-footer">
-              <button type="submit" class="btn btn-primary btn-block btn-large ">
-                <a href="#">
-                  Enviar</a>
+              <!-- <div class="re-flex">
+              <div class="g-recaptcha" data-sitekey="clave-del-sitio">
+        </div>
+        <div class="flex">
+              <button type="submit"  name="submit" class="btn btn-primary btn-block btn-large ">
+             
+                  Enviar
               </button>
+</div>
+</div> -->
             </div>
           </div>
         </div>
       </div>
+      <div class="weight">
+    <p>Info@entreverde.com.co</p>
+  </div>
     </div>
 
   </section>
 
 
 
-  <div class="weight">
+  <div class="weight d-none d-sm-block">
     <p>Info@entreverde.com.co</p>
   </div>
 
@@ -75,10 +76,4 @@
       </a>
     </p>
   </div>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="assets/js/bootstrap.js "></script>
-  <script type="text/javascript" src="assets/js/main.js "></script>
-</body>
-
-</html>
+   <?php get_footer(); ?>

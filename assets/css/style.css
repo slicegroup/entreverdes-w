@@ -326,3 +326,9 @@ input[type="number"]::-webkit-inner-spin-button,
 .modal{
   padding-left: 0px!important;
 }
+
+.frm-g-recaptcha{
+  width: 108%;
+  justify-content: center;
+  display: flex;
+}
